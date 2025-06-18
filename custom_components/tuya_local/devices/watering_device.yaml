@@ -1,0 +1,67 @@
+# Adding Watering Device device with product id 7wptjnujjkf1gzm1
+# Cloud device spec: [{"id": 2, "name": "mode", "type": "Enum", "format": "{\"range\":[\"auto\",\"manual\"]}", "enumMap": {}}]
+name: Watering Device
+products:
+  - id: 7wptjnujjkf1gzm1
+    manufacturer: Beca Smart
+    model: BAF-808
+entities:
+  - entity: valve
+    class: water
+    dps:
+      - id: 1
+        name: valve
+        type: boolean
+      - id: 48
+        type: string
+        optional: true
+        name: schedule
+  - entity: select
+    name: Mode
+    icon: "mdi:auto-mode"
+    dps:
+      - id: 2
+        type: string
+        name: option
+        mapping:
+          - dps_val: auto
+            value: Auto
+          - dps_val: manual
+            value: Manual
+  - entity: number
+    class: duration
+    translation_key: timer
+    category: config
+    dps:
+      - id: 56
+        type: integer
+        name: value
+        unit: s
+        range:
+          min: 0
+          max: 360
+  - entity: number
+    name: Repeat interval
+    icon: "mdi:repeat"
+    category: config
+    dps:
+      - id: 101
+        type: integer
+        name: value
+        unit: h
+        range:
+          min: 0
+          max: 60
+  - entity: sensor
+    translation_key: time_remaining
+    class: duration
+    dps:
+      - id: 102
+        type: integer
+        name: sensor
+        unit: s
+      - id: 10
+        type: integer
+        name: runtime
+        unit: s
+        optional: true

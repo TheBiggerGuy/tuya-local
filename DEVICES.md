@@ -480,7 +480,7 @@
 - Unknown brand dual channel smart meter
 - V-WIFI-DL01-ES energy consumption single clamp meter
 - V-WIFI-DL02-ES energy consumption dual clamp meter
-- WDYK 2P63A, 3P 400V, 4P100A  energy meter circuit breakers
+- WDYK 2P63A, 3P 400V, 4P100A energy meter circuit breakers
 - Xoca DAC2121C BI energy meter
 - Yagusmart 3PN 63A 3-phase multi-tariff energy meter
 - Zemismart SDM01-TW0-12-ZM 3-phase bidirectional energy meter
@@ -914,6 +914,7 @@ port and password.
 
 - ARD-100+ valve controller
 - Aubess Rainpoint TTP106W irrigation system
+- Becasmart BAF-808 irrigation system
 - Becasmart BAF-908 irrigation system
 - Garza Wi-Fi garden irrigation system (ITV103W with 433MHz WiFi hub)
 - Haozee water valve
